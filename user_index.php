@@ -46,8 +46,8 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo htmlspecialchars($user['email']); ?></td>
                     <td><?php echo $user['created_at']; ?></td>
                     <td>
-                        <a href="users_edit.php?id=<?php echo $user['id']; ?>" class="btn btn-edit">Edit</a>
-                        <a href="users_delete.php?id=<?php echo $user['id']; ?>" class="btn btn-delete" onclick="return confirm('Are you sure?')">Delete</a>
+                        <a href="user_edit.php?id=<?php echo $user['id']; ?>" class="btn btn-edit">Edit</a>
+                        <a href="user_delete.php?id=<?php echo $user['id']; ?>" class="btn btn-delete" onclick="return confirm('Are you sure?')">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
