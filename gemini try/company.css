@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(10864261.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    height: 100vh;
+     font-family: "Roboto Flex", sans-serif;
+     overflow: hidden;
+}
+.header{
+    margin: 80px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.header .logo > p{
+    font-size: 1.2rem;
+}
+.navbars{
+    width: 50%;
+}
+.navbars ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+.navbars ul li:first-child{
+     text-decoration: underline;
+     text-decoration-thickness: 1px;
+     text-decoration-style:solid;
+}
+.navbars ul li:last-child{
+    border: 1px solid black;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+.navbars ul li{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.welcome-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-left: 10vw;
+    margin-top: 20vw;
+}
+.welcome-container .welcome{
+    width: 30%;
+}
+.welcome-container .welcome p{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+.welcomep{
+    width: 30%;
+}
+.welcome p{
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+.learnmore{
+    border: 3px solid black;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5px;
+}
+.learnmore p{
+    text-transform: uppercase;
+}

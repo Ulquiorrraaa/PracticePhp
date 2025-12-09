@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+  </head>
+
+  <style>
+    .h1-h1 {
+      background-color: grey;
+      width: 200px;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 20px;
+      color: black;
+    }
+    .list-foods {
+      background-color: grey;
+      width: 200px;
+      padding: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-row-start: auto;
+    }
+    .paragraphs {
+      background-color: grey;
+      width: 200px;
+      padding: 10px;
+    }
+    .table {
+      background-color: grey;
+      width: 200px;
+      padding: 10px;
+      align-items: center;
+      justify-items: center;
+      margin-top: 40px;
+      border: 1px solid green;
+      border-collapse: separate;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div class="h1-h1">
+        <h1>Order what you want</h1>
+      </div>
+
+      <div class="list-foods">
+        <ol>
+          <li>Burger</li>
+          <li>Fries</li>
+          <li>Chicken</li>
+        </ol>
+      </div>
+
+      <div class="paragraphs">
+        <p>Enjoy the <i>Foods</i></p>
+      </div>
+    </div>
+
+    <div class="table">
+      <table>
+        <tr>
+            <th>Col1</th>
+            <th>Col2</th>
+        </tr>
+        <tr>
+          <td>row1</td>
+          <td>row1</td>
+        </tr>
+        <tr>
+          <td>row2</td>
+          <td>row2</td>
+        </tr>
+        <tr>
+          <td>row3</td>
+          <td>row3</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
