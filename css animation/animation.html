@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        margin: 50vh;
+        overflow: hidden;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+      }
+      hr {
+        height: 100%;
+      }
+      .delete,
+      .duplicate,
+      .color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 8px;
+      }
+      .color div {
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        border-radius: 5px;
+      }
+      .plus {
+        display: flex;
+        align-items: center;
+        background-color: rgb(130, 130, 224);
+        padding: 1.3rem;
+        border-radius: 50%;
+        position: relative;
+      }
+      .plus i {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .options-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .options-container i {
+        width: 14px;
+        height: 16px;
+      }
+      .tooltip {
+        position: absolute;
+        display: flex;
+        width: 20vw;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-40%);
+        border-radius: 10px;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      .tooltip p {
+        background-color: rgb(130, 130, 224);
+        padding: 1rem;
+        color: rgb(46, 42, 42);
+      }
+      .plus:hover .tooltip{
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="plus">
+        <i class="fa-solid fa-plus"></i>
+        <div class="tooltip">
+          <p>You can add text, photos, and graphics to your design!</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="options-container">
+        <div class="delete">
+          <i class="fa-regular fa-trash-can"></i>
+          <p>Delete</p>
+        </div>
+
+        <div class="duplicate">
+          <i class="fa-regular fa-clone"></i>
+          <p>Duplicate</p>
+        </div>
+
+        <div class="color">
+          <div></div>
+          <p>Color</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
